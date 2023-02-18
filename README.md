@@ -49,3 +49,19 @@ Phrase - приложение для изучение фразовых глаг�
 В папке Sprites хранятся файлы (изображения), используемые для кнопок.
 
 В папке Scripts хранится файл - программный код, написанный на C#
+
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class LoadScenes : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public void ChangeScenes(int _number)
+    {
+        SceneManager.LoadScene(_number);
+    }
+}
+```
